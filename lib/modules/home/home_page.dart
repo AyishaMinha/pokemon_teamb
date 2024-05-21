@@ -142,6 +142,7 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   bottom: false,
                   child: CustomScrollView(
                     slivers: [
+                      
                       SliverPadding(
                         padding: EdgeInsets.symmetric(
                           horizontal: AppLayouts.horizontalPagePadding,

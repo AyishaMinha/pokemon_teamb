@@ -81,7 +81,8 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(create: (context) => ShirtProvider()),
         ],
         child: ScreenUtilInit(
-          minTextAdapt: false,
+          minTextAdapt: true,
+          useInheritedMediaQuery: true,
           designSize: const Size(414, 896),
           builder: (context, child) => Builder(
             builder: (context) {

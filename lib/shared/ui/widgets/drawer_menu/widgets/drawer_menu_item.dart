@@ -3,6 +3,7 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:app/shared/ui/widgets/pokeball.dart';
 import 'package:app/theme/app_theme.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DrawerMenuItemWidget extends StatelessWidget {
   final String text;
@@ -25,7 +26,7 @@ class DrawerMenuItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5),
+      padding: const EdgeInsets.all(7),
       child: InkWell(
         onTap: onTap ??
             () {
@@ -33,6 +34,7 @@ class DrawerMenuItemWidget extends StatelessWidget {
             },
         child: Ink(
           child: Container(
+            width: width,
             decoration: BoxDecoration(
               border: Border.all(
                 width: 2,
@@ -84,6 +86,7 @@ class DrawerMenuItemWidget extends StatelessWidget {
                         Text(
                           text,
                           style: TextStyle(
+                            fontSize: 10.sp,
                             color: (onTap != null)
                                 ? Colors.white
                                 : Colors.white.withOpacity(0.5),

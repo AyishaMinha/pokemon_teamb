@@ -51,6 +51,7 @@ class _DrawerMenuWidgetState extends State<DrawerMenuWidget>
     final TextTheme textTheme = Theme.of(context).textTheme;
 
     return Container(
+     
       padding: const EdgeInsets.symmetric(horizontal: 10),
       decoration: BoxDecoration(
         color: Colors.transparent,
@@ -134,6 +135,7 @@ class _DrawerMenuWidgetState extends State<DrawerMenuWidget>
                     },
                   ),
                   DrawerMenuItemWidget(
+                    width: 300,
                     icon: Icons.list,
                     text: "Items",
                     onTap: () {
